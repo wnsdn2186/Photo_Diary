@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:onClick="closePicture"
+    android:background="@drawable/block_back2">
+
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:onClick="onTouch"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="18sp"
+        android:onClick="onTouch"
+        android:background="@drawable/minitextback"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:onClick="onTouch"
+        android:background="@drawable/minitextback"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:text="Content"
+        android:textSize="18sp"
+        android:onClick="onText"
+        android:background="@drawable/textback"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="none"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resave"
+        android:text="수정"
+        android:onClick="onText">
+    </Button>
+</LinearLayout>

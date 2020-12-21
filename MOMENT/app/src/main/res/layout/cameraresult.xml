@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    android:orientation="vertical"
+    android:background="@drawable/block_back2">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/photo_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize = "50px"
+        android:text="TextView"
+        android:background="@drawable/minitextback"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/photo_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize = "50px"
+        android:text="TextView"
+        android:background="@drawable/minitextback"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"/>
+
+
+    <EditText
+        android:id="@+id/photo_diary"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="내용" android:background="@drawable/textback"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="저장"
+        android:onClick="onSave">
+    </Button>
+</LinearLayout>
