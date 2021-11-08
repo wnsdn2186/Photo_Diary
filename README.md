@@ -10,7 +10,7 @@
 - Android Studio(Java)
 
 ## Application Version
-- minSdkVersion : 30
+- minSdkVersion : 16
 - targetSdkVersion : 30
 
 
